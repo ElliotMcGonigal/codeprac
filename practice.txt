@@ -4,7 +4,7 @@ edgecase .trim()
 
 
 
-function(string) {
+function stringToURL(string) {
 string = string.trim();     //if there is whitespace on ends
 const array = string.split();
 let newString = array[0];              //this way we run through loop 1 less time and don't need to add the end later
@@ -12,4 +12,21 @@ for (i = 0; i < array.length; i++) {
 newString = newString + "%20" + array[i+1];            //set to add the parts of the string together
 }
 return newString;
+}
+
+
+
+
+#2 deduping
+cannot use filter(), however Sets don't allow duplicates, so put it in a Set
+
+
+function deduping(array) {
+	const arraySet = [...new Set(array)];
+	return arraySet;
+}
+
+function withFilter(array) {
+	const arrayFilter = array.filter((item, index) => array.indexOf(item) === index);
+	return arrayFilter;
 }
