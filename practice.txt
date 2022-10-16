@@ -41,11 +41,18 @@ tally index
 
 
 
-function compString(string) {
-const array = string.split("");
-let newString = "";
-	array.forEach(funtion(e, i) {
-		let counter = 0;
-		for 
-	}
-}
+//function compString(string) {
+//const array = string.split("");
+//let newString = "";
+//	array.forEach(funtion(e, i) {
+//		let counter = 0;
+//		for 
+//	}
+//}
+
+
+
+const string = "aaabccdddda";
+const s = string.split();
+const compress = s => s.replace(/(.)\1+/g, s => s.length + s[0]);
+
