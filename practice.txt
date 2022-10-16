@@ -56,3 +56,24 @@ const string = "aaabccdddda";
 const s = string.split();
 const compress = s => s.replace(/(.)\1+/g, s => s.length + s[0]);
 
+
+
+
+#4 check unique
+turn into an array and check length of Set
+
+
+function isUnique(array) {
+	if (array.length !== new Set(array).size) {
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+
+
+
+
+
+
