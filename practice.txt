@@ -30,3 +30,22 @@ function withFilter(array) {
 	const arrayFilter = array.filter((item, index) => array.indexOf(item) === index);
 	return arrayFilter;
 }
+
+
+
+
+#3 compressing string
+separate into array
+look at next index and compare to current
+tally index
+
+
+
+function compString(string) {
+const array = string.split("");
+let newString = "";
+	array.forEach(funtion(e, i) {
+		let counter = 0;
+		for 
+	}
+}
